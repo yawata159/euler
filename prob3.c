@@ -2,18 +2,20 @@
 #include <stdlib.h>
 
 int main() {
+
   int ans;
-  int div = 1;
+  int div = 3;
   long num = 600851475143;
   
-  while (div < num/2) {
+  while (div <= num) {
     if (num % div == 0) {
+      num = num/div;
       ans = div;
     }
     div+=2;
   }
-  
-  printf("%d\n",div);  
+
+  printf("%d\n",ans);  
 
   return 0;
 }
