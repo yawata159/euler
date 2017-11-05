@@ -9,4 +9,5 @@ int main() {
 			ans += i*j;
 	ans *= 2;
 	printf("%d\n", ans);
+	return 0;
 }
